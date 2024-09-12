@@ -1,0 +1,42 @@
+:root{
+    --theme-color: #ffff;
+    --primary-color: #718427;
+    --secondary-color: #E2793C;
+    --three-color: #9FB48E;
+    --for-color: #171E1A;
+    --five-color: #004465;
+
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460
+}
+
+body{
+    font-family: "ABeeZee", sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    /* poner margen para que las paginas esten abajo del navbar */
+    padding-top: 70px;
+    padding-bottom: 280px;
+    min-height: 100Vh;
+    position: relative;
+    margin: 0;
+}
+
+
+/* body {
+    
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}  */
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+

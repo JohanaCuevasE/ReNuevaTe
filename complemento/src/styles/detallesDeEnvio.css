@@ -1,0 +1,187 @@
+body {
+  font-family: "ABeeZee", sans-serif;
+  font-style: normal;
+}
+
+.contenedorAmbosDetallesEnvio {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  text-align: start;
+}
+
+.contenedorDetallesEnvio {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.izquierda {
+  flex: 60%;
+  width: auto;
+  padding: 20px;
+}
+
+.derecha {
+  flex: 40%;
+  padding: 20px;
+}
+
+.flexDetallesEnvio {
+  padding: 5px;
+  flex: 50%;
+}
+
+.carritoEnvio {
+  width: 30px;
+  height: 30px;
+}
+
+.formularioDetallesEnvio {
+  /* Añade estilos si es necesario */
+}
+
+.formularioDetallesEnvio .mb-1 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.formularioDetallesEnvio .mb-1 label {
+  width: 30%; /* Ajusta este valor según sea necesario */
+  text-align: left;
+  margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+.formularioDetallesEnvio .mb-1 input,
+.formularioDetallesEnvio .mb-1 select {
+  background-color: #F9F8DF;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.formularioDetallesEnvio .mb-1 input {
+  border: 2px solid #000000; /* Asegúrate de que el borde sea consistente */
+}
+
+.formularioDetallesEnvio .mb-1 select {
+  border: 2px solid #000000; /* Asegúrate de que el borde sea consistente */
+  padding: 5px; /* Añade un poco de espacio interno */
+}
+
+.formularioDetallesEnvio .mb-1 select:focus {
+  background-color: #ffffff;
+  outline: none; /* Quita el borde por defecto del enfoque */
+  border-color: #0a8d08; /* Cambia el color del borde al enfocar si lo deseas */
+  box-shadow: 0 0 5px rgba(178, 97, 97, 0.1); /* Agrega una sombra */
+}
+
+.botonDetallesEnvio {
+  background-color: #E2793C;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.form-select {
+  background-color: #F9F8DF;
+  width: 70%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.formularioDetallesEnvio .mb-1 input.error,
+.formularioDetallesEnvio .mb-1 select.error {
+  border: 2px solid red; /* Resalta el campo con un borde rojo */
+}
+
+.inputCupon {
+  display: none;
+  border-radius: 10px;
+  border: 1px solid black; /* Agrega un borde para mantener consistencia */
+}
+
+.formularioDetallesPago a {
+  color: blue;
+}
+
+
+.underline {
+  border-bottom: 2px solid rgb(134, 80, 80);
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 765px) {
+  .contenedorDetallesEnvio {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .flexDetallesEnvio {
+    /*background-color: beige;*/
+    padding: 1px;
+    flex: 50%;
+  }
+
+  .carritoEnvio {
+    width: 30px;
+    height: 30px;
+  }
+
+  .formularioDetallesEnvio {
+    /*background-color: azure;*/
+  }
+
+  .formularioDetallesEnvio .mb-1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  align-items:baseline;
+  }
+
+  .formularioDetallesEnvio .mb-1 label {
+    min-width: 120px; /* Ajusta este valor según sea necesario */
+    margin-right: 5px; /* Espacio entre el label y el input */
+  }
+
+  .formularioDetallesEnvio .mb-1 input {
+    background-color: #F9F8DF;
+    flex-grow: 0; /* Para que el input ocupe el resto del espacio disponible */
+    border-radius: 10px;
+  }
+
+  .contenedorAmbosDetallesEnvio {
+    flex-direction: column;
+  }
+
+  .derecha {
+    flex: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .contenedorInputCupon {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    text-align: center;
+  }
+
+  .inputCupon {
+    display: none;
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  .formularioDetallesPago a {
+    color: blue;
+  }
+}

@@ -1,0 +1,158 @@
+body {
+    font-family: "ABeeZee", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.comments-section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "ABeeZee", sans-serif;
+}
+
+.comments-section h2 {
+    color: #004465;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "ABeeZee", sans-serif;
+    margin-bottom: 20px;
+}
+
+.comments-section h2::before {
+    content: "commenta";
+    font-family: 'Material Icons';
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.comment-content {
+    background-color: #718427;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    max-width: 90%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.comment-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+textarea, input, select {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #718427;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    overflow-y: auto;
+}
+
+#envíar {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E2793C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#envíar:hover {
+    background-color: #718427;
+}
+
+@media (max-width: 1024px) {
+    .comments-section {
+        max-width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .comments-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .comment-content {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .comments-section {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 60px;
+    }
+
+    .comment {
+        flex-direction: column;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #envíar, textarea, input, select {
+        width: 100%;
+        min-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .comments-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .user-avatar {
+        font-size: 20px;
+    }
+
+    .user-avatar .material-icons {
+        font-size: 36px;
+    }
+}
